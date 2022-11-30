@@ -1,0 +1,382 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  nav{
+    width: 100%;
+    height: 70px;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.animate-charcter
+{
+text-transform: uppercase;
+background-image: linear-gradient(
+-225deg,
+#231557 0%,
+#44107a 29%,
+#ff1361 67%,
+#fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #fff;
+background-clip: text;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+font-size: 190px;
+}
+
+@keyframes textclip {
+to {
+background-position: 200% center;
+}
+}
+.container1{
+display: flex;
+width: 900px;
+word-wrap: break-word;
+flex-direction: row;
+align-items: flex-end;
+}
+.im1{
+background-color: black;
+}
+#id01{
+background-color: black;
+margin: 0px;
+width: 100%;
+padding: 0px;
+} 
+  section {
+    padding-top: 5rem;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+  }
+  
+  #home {
+    background-image: url("https://images.pexels.com/photos/5483077/pexels-photo-5483077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  #hero-title {
+    font-size: 50px;
+    font-weight: 700;
+  }
+  
+  #hero-desc {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  
+  .about-img {
+    height: 25rem;
+    width: 25rem;
+  }
+  
+  .about-img img {
+    max-width: 100%;
+    min-height: 100%;
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-img {
+    margin-right: 10rem;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  
+.contact-section{
+    background-color: #111;
+    background-size: cover;
+    padding: 40px 0;
+  }
+  .contact-section h1{
+    text-align: center;
+    color: #ddd;
+  }
+/* about us section */  
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    align-content: center;
+    min-height: 100vh;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+.image{
+    background: url("/pexels-hidden-couple-3048527\ 1.png") center/cover no-repeat;
+}
+.content{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 36px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 0.5px solid #777;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+    text-transform: uppercase;
+    color: #777;
+    text-decoration: none;
+}
+.links li:hover{
+    border-color: #06d6a0;
+}
+.links li:hover a{
+    color :#06d6a0;
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+}
+.icons li{
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color: #06d6a0;
+}
+
+
+/*******/
+
+@media(max-width: 992px){
+    section{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+        height: 100vh;
+    }
+    .content{
+        height: 100vh;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+/*end */  
+
+  
+.container {
+    width: 90%;
+    margin: 50px auto;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+  
+  .card {
+    width: 30%;
+    background: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+  }
+  
+  .card-header {
+    padding: 20px 10px;
+    color: black;
+    transition: 0.3s;
+  }
+  .card-header:hover{
+    color: white;
+    background: #111;
+    
+  }
+  .card-body {
+    padding: 30px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  
+  .card-body:hover {
+    color: white;
+    background: #111;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 40%;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .container {
+      width: 100%;
+    }
+  
+    .heading {
+      padding: 20px;
+      font-size: 20px;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  }
+
+
+
+
+
+
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+  
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 1px solid white;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #34495e;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    background: white;
+    color: black;
+    padding: 12px 50px;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .contact-form-btn:hover{
+    background: #111;
+    color: white;
+    border:1px solid white ;
+  }
